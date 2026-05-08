@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sahan Narangoda | Associate Software Engineer</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">SN<span class="dot">.</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <canvas id="networkCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-photo-wrap">
+        <div class="hero-photo" id="heroPhoto">
+          <img src="profile.jpeg" alt="Sahan Narangoda" id="heroImg" onerror="this.style.display='none'"/>
+          <div class="photo-placeholder" id="photoPlaceholder">
+            <i class="fa-solid fa-user"></i>
+          </div>
+        </div>
+        <div class="status-badge">
+          <span class="pulse"></span>Open to Opportunities
+        </div>
+      </div>
+      <div class="hero-text">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Sahan Narangoda</h1>
+        <div class="hero-role">
+          <span class="role-prefix">&gt;&nbsp;</span>
+          <span id="typed"></span><span class="cursor">|</span>
+        </div>
+        <p class="hero-desc">
+          Software Engineering Intern at <strong>Hayleys Fentons</strong> —
+          building full-stack enterprise tools and AI-powered solutions.
+          Final-year IT undergraduate at <strong>SLIIT</strong>, specialising in Software Engineering.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Get in Touch</a>
+          <a href="resume.pdf" download class="btn btn-outline">
+            <i class="fa-solid fa-download"></i> Download Resume
+          </a>
+        </div>
+        <div class="hero-social">
+          <a href="https://www.linkedin.com/in/sahannarangoda" target="_blank" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/sahann" target="_blank" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="mailto:narangodadas@gmail.com" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a href="tel:+94789100053" aria-label="Phone">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down"><i class="fa-solid fa-chevron-down"></i></a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About <span>Me</span></h2>
+      <div class="about-grid">
+        <div class="about-photo-side">
+          <div class="about-photo-frame">
+            <img src="profile.jpeg" alt="Sahan Narangoda"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"/>
+            <div class="about-placeholder" style="display:none">
+              <i class="fa-solid fa-user-tie"></i>
+            </div>
+          </div>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">3+</span><span class="stat-label">Published Apps</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">92%</span><span class="stat-label">Research Accuracy</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">3.02</span><span class="stat-label">GPA / 4.0</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text-side">
+          <p>
+            I'm an Associate Software Engineer with a passion for building practical, scalable tools
+            at the intersection of <strong>software engineering</strong> and <strong>artificial intelligence</strong>.
+            Currently contributing to enterprise solutions at Hayleys Fentons while completing my final year at SLIIT.
+          </p>
+          <p>
+            I've developed and published Flutter apps on the Play Store (<strong>TAXGURU, Vehicle Duty Guide, CASHBOOK</strong>),
+            and co-authored a peer-reviewed research paper on multimodal deep learning for COVID-19 detection —
+            achieving 92.4% accuracy with U-Net + ResNet50.
+          </p>
+          <p>
+            Beyond code, I'm a drummer in <strong>SNAP Band</strong> and an active member of the SLIIT AI Society.
+          </p>
+          <div class="about-info-grid">
+            <div class="info-item"><i class="fa-solid fa-location-dot"></i><span>Colombo, Sri Lanka</span></div>
+            <div class="info-item"><i class="fa-solid fa-envelope"></i><span>narangodadas@gmail.com</span></div>
+            <div class="info-item"><i class="fa-solid fa-phone"></i><span>078-910 0053</span></div>
+            <div class="info-item"><i class="fa-solid fa-graduation-cap"></i><span>SLIIT — Software Engineering (Hons)</span></div>
+          </div>
+          <a href="resume.pdf" download class="btn btn-primary" style="margin-top:1.5rem">
+            <i class="fa-solid fa-download"></i> Download Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section section-dark" id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience &amp; <span>Education</span></h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-icon work"><i class="fa-solid fa-laptop-code"></i></div>
+          <div class="timeline-card">
+            <span class="timeline-tag work-tag">Work</span>
+            <h3>Software Engineering Intern</h3>
+            <h4>Hayleys Fentons, Colombo</h4>
+            <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Jan 2024 – Present</span>
+            <ul>
+              <li>Developing <strong>internal enterprise tools</strong> used across the organisation.</li>
+              <li>Building full-stack features using <strong>React, Node.js &amp; SQL</strong>.</li>
+              <li>Collaborating in agile sprints with cross-functional teams.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item right">
+          <div class="timeline-icon work"><i class="fa-solid fa-mobile-screen"></i></div>
+          <div class="timeline-card">
+            <span class="timeline-tag work-tag">Work</span>
+            <h3>Software Engineering Intern</h3>
+            <h4>ERABIZ Solutions</h4>
+            <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Jan 2024 – Jun 2024</span>
+            <ul>
+              <li>Built <strong>Flutter mobile apps</strong> integrated with Firebase backend.</li>
+              <li>Delivered production-ready features for client-facing applications.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-icon edu"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="timeline-card">
+            <span class="timeline-tag edu-tag">Education</span>
+            <h3>BSc (Hons) Information Technology</h3>
+            <h4>SLIIT — Sri Lanka Institute of Information Technology</h4>
+            <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 2022 – 2026 | Malabe</span>
+            <p>Specialising in <strong>Software Engineering</strong>. Current GPA: <strong>3.02 / 4.0</strong>.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item right">
+          <div class="timeline-icon edu"><i class="fa-solid fa-school"></i></div>
+          <div class="timeline-card">
+            <span class="timeline-tag edu-tag">Education</span>
+            <h3>G.C.E. Advanced Level</h3>
+            <h4>Physical Science Stream</h4>
+            <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 2021</span>
+            <p>Completed A/Ls in the Physical Science stream.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section class="section" id="research">
+    <div class="container">
+      <h2 class="section-title">Research <span>Work</span></h2>
+      <div class="research-card">
+        <div class="research-header">
+          <div class="research-icon"><i class="fa-solid fa-microscope"></i></div>
+          <div>
+            <span class="research-badge">Peer-Reviewed · SLIIT 2024</span>
+            <h3>Combined Deep Learning for COVID-19 Detection</h3>
+            <p class="research-sub">Multimodal approach using chest X-rays &amp; cough audio signals</p>
+          </div>
+        </div>
+        <div class="research-metrics">
+          <div class="metric">
+            <span class="metric-num">92.4%</span>
+            <span class="metric-label">X-ray Accuracy<br><small>U-Net + ResNet50</small></span>
+          </div>
+          <div class="metric">
+            <span class="metric-num">95.2%</span>
+            <span class="metric-label">Cough Accuracy<br><small>CPCE Features</small></span>
+          </div>
+          <div class="metric">
+            <span class="metric-num">Grad-CAM</span>
+            <span class="metric-label">Explainability<br><small>Visual Heatmaps</small></span>
+          </div>
+        </div>
+        <div class="research-points">
+          <div class="research-point">
+            <i class="fa-solid fa-circle-dot"></i>
+            <p>Applied <strong>U-Net segmentation</strong> + <strong>ResNet50 classification</strong> on chest X-ray images, achieving 92.4% diagnostic accuracy.</p>
+          </div>
+          <div class="research-point">
+            <i class="fa-solid fa-circle-dot"></i>
+            <p>Used <strong>chaos-based CPCE cough features</strong> for audio-based detection at 95.2% accuracy.</p>
+          </div>
+          <div class="research-point">
+            <i class="fa-solid fa-circle-dot"></i>
+            <p>Implemented <strong>Grad-CAM heatmaps</strong> for model interpretability and responsible AI transparency in healthcare.</p>
+          </div>
+        </div>
+        <div class="research-tags">
+          <span>PyTorch</span><span>TensorFlow</span><span>U-Net</span>
+          <span>ResNet50</span><span>Grad-CAM</span><span>Deep Learning</span><span>Medical AI</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section-dark" id="projects">
+    <div class="container">
+      <h2 class="section-title">My <span>Projects</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-badge">Featured · Play Store</div>
+          <div class="project-icon"><i class="fa-solid fa-calculator"></i></div>
+          <div class="project-body">
+            <h3>TAXGURU</h3>
+            <p class="project-subtitle">Income Tax Calculator — Sri Lanka</p>
+            <p>A Flutter app helping Sri Lankans calculate their income tax accurately. Live on the Google Play Store with real-world users.</p>
+            <div class="project-tags"><span>Flutter</span><span>Dart</span><span>Firebase</span></div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/sahann" target="_blank" class="proj-link">
+              <i class="fa-brands fa-github"></i> Code
+            </a>
+            <a href="#" class="proj-link proj-link-accent">
+              <i class="fa-brands fa-google-play"></i> Play Store
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card featured">
+          <div class="project-badge">Play Store</div>
+          <div class="project-icon"><i class="fa-solid fa-book-open"></i></div>
+          <div class="project-body">
+            <h3>CASHBOOK</h3>
+            <p class="project-subtitle">SME Finance Manager</p>
+            <p>A financial management Flutter app designed for small &amp; medium enterprises to track income, expenses, and reports on the go.</p>
+            <div class="project-tags"><span>Flutter</span><span>Dart</span><span>SQLite</span></div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/sahann" target="_blank" class="proj-link">
+              <i class="fa-brands fa-github"></i> Code
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon"><i class="fa-solid fa-car"></i></div>
+          <div class="project-body">
+            <h3>Vehicle Duty Guide</h3>
+            <p class="project-subtitle">Import Duty Calculator — Sri Lanka</p>
+            <p>Flutter app that calculates Sri Lankan vehicle import duty based on various parameters. Published on Play Store.</p>
+            <div class="project-tags"><span>Flutter</span><span>Dart</span><span>Firebase</span></div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/sahann" target="_blank" class="proj-link">
+              <i class="fa-brands fa-github"></i> Code
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon"><i class="fa-solid fa-utensils"></i></div>
+          <div class="project-body">
+            <h3>Caravan Fresh</h3>
+            <p class="project-subtitle">Cafeteria Management System</p>
+            <p>A full-stack MERN web application for cafeteria management, handling menus, orders and inventory for administrators and customers.</p>
+            <div class="project-tags"><span>MongoDB</span><span>Express.js</span><span>React.js</span><span>Node.js</span></div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/sahann" target="_blank" class="proj-link">
+              <i class="fa-brands fa-github"></i> Code
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon"><i class="fa-solid fa-hospital"></i></div>
+          <div class="project-body">
+            <h3>ZEECARE</h3>
+            <p class="project-subtitle">Hospital Management System</p>
+            <p>A comprehensive MERN stack hospital management platform covering patient records, appointments, and admin dashboards.</p>
+            <div class="project-tags"><span>MongoDB</span><span>Express.js</span><span>React.js</span><span>Node.js</span></div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/sahann" target="_blank" class="proj-link">
+              <i class="fa-brands fa-github"></i> Code
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills &amp; <span>Tools</span></h2>
+      <div class="skills-wrapper">
+        <div class="skill-group">
+          <h3><i class="fa-solid fa-code"></i> Languages</h3>
+          <div class="skill-pills">
+            <span class="pill">JavaScript</span><span class="pill">Python</span>
+            <span class="pill">Java</span><span class="pill">Kotlin</span>
+            <span class="pill">C / C++</span><span class="pill">PHP</span><span class="pill">SQL</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3><i class="fa-solid fa-layer-group"></i> Web &amp; Mobile</h3>
+          <div class="skill-pills">
+            <span class="pill highlight">MERN Stack</span><span class="pill">React.js</span>
+            <span class="pill">Node.js</span><span class="pill">Express.js</span>
+            <span class="pill highlight">Flutter</span><span class="pill">Android</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3><i class="fa-solid fa-database"></i> Databases &amp; Cloud</h3>
+          <div class="skill-pills">
+            <span class="pill">MongoDB</span><span class="pill">Firebase</span>
+            <span class="pill">MySQL</span><span class="pill">SQLite</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3><i class="fa-solid fa-brain"></i> AI / Machine Learning</h3>
+          <div class="skill-pills">
+            <span class="pill highlight">PyTorch</span><span class="pill">TensorFlow</span>
+            <span class="pill">U-Net</span><span class="pill">ResNet50</span>
+            <span class="pill">Grad-CAM</span><span class="pill">Deep Learning</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3><i class="fa-solid fa-wrench"></i> Tools &amp; IDEs</h3>
+          <div class="skill-pills">
+            <span class="pill">Git</span><span class="pill">Docker</span>
+            <span class="pill">Postman</span><span class="pill">REST APIs</span>
+            <span class="pill">VS Code</span><span class="pill">Android Studio</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3><i class="fa-solid fa-rocket"></i> Currently Learning</h3>
+          <div class="skill-pills">
+            <span class="pill">FastAPI</span><span class="pill">MLOps</span>
+            <span class="pill">AWS CCP</span><span class="pill">Deep Learning Spec.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get in <span>Touch</span></h2>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <p class="contact-intro">
+            I'm open to new opportunities, collaborations, or a friendly chat about tech, AI, or Flutter. Feel free to reach out!
+          </p>
+          <div class="contact-cards">
+            <a href="mailto:narangodadas@gmail.com" class="contact-card">
+              <i class="fa-solid fa-envelope"></i>
+              <div><span>Email</span><strong>narangodadas@gmail.com</strong></div>
+            </a>
+            <a href="tel:+94789100053" class="contact-card">
+              <i class="fa-solid fa-phone"></i>
+              <div><span>Phone</span><strong>078-910 0053</strong></div>
+            </a>
+            <a href="https://www.linkedin.com/in/sahannarangoda" target="_blank" class="contact-card">
+              <i class="fa-brands fa-linkedin-in"></i>
+              <div><span>LinkedIn</span><strong>sahannarangoda</strong></div>
+            </a>
+            <a href="https://github.com/sahann" target="_blank" class="contact-card">
+              <i class="fa-brands fa-github"></i>
+              <div><span>GitHub</span><strong>sahann</strong></div>
+            </a>
+            <div class="contact-card no-link">
+              <i class="fa-solid fa-location-dot"></i>
+              <div><span>Location</span><strong>Colombo, Sri Lanka</strong></div>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <input type="text" id="fname" placeholder=" " required/>
+            <label for="fname">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="femail" placeholder=" " required/>
+            <label for="femail">Your Email</label>
+          </div>
+          <div class="form-group">
+            <input type="text" id="fsubject" placeholder=" " required/>
+            <label for="fsubject">Subject</label>
+          </div>
+          <div class="form-group">
+            <textarea id="fmessage" rows="5" placeholder=" " required></textarea>
+            <label for="fmessage">Your Message</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fa-solid fa-paper-plane"></i> Send Message
+          </button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="nav-logo footer-logo">SN<span class="dot">.</span></div>
+      <p>Designed &amp; Built by <strong>Sahan Narangoda</strong></p>
+      <p class="footer-sub">Associate Software Engineer &nbsp;·&nbsp; AI Enthusiast &nbsp;·&nbsp; Sri Lanka</p>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/sahannarangoda" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/sahann" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:narangodadas@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Sahan Narangoda. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
